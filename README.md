@@ -12,10 +12,10 @@
   
 2. Python Virtual Enviroment \
   `python3 -m venv env` \
-  `source env/bin/activate` \
+  `source env/bin/activate` 
   
 3. Python dependencies \
-  `pip3 install r- dependencies.txt` \
+  `pip3 install r- dependencies.txt` 
   
 4. Test Gunicorn(Optional) \
   `gunicorn --bind 0.0.0.0:5000 wsgi:app` \
