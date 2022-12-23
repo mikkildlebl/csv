@@ -38,6 +38,14 @@
       }  
     }
     ```
+7. Enable NGINX Server Block
+  `ln -s /etc/nginx/sites-available/app /etc/nginx/sites-enabled/`
+  
+8. Start NGINX
+  `systemctl restart nginx`
+ 
+9. Adjust Firewall
+  `sudo ufw allow 'Nginx Full'`
   
 
 
