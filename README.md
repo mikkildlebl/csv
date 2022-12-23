@@ -18,7 +18,7 @@
   `pip3 install r- dependencies.txt` 
   
 4. Test Gunicorn(Optional) \
-  `gunicorn --bind 0.0.0.0:5000 wsgi:app` \
+  `gunicorn --workers 3 --bind unix:*Directory*app.sock -m 777 wsgi:app` \
   view app at *http://localhost:5000* \
   controll C to exit
   
