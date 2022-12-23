@@ -26,7 +26,7 @@
    `gunicorn --workers 3 --bind unix:/home/movieapp/app.sock -m 777 wsgi:app
   
 6. Configure NGINX
-  - `ls /etc/nginx/`  \
+  - `ls /etc/nginx/`
   - nano /etc/nginx/sites-available/app
   - ```
     server {
