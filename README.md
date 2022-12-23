@@ -26,9 +26,9 @@
   
   
 6. Configure NGINX \
-  1. `ls /etc/nginx/` \
-  2. nano /etc/nginx/sites-available/app \
-  3. 
+  - `ls /etc/nginx/` \
+  - nano /etc/nginx/sites-available/app \
+  - 
   
 
 
