@@ -20,6 +20,7 @@
 4. Test Gunicorn(Optional) \
   `gunicorn --bind 0.0.0.0:5000 wsgi:app` \
   view app at *http://localhost:5000* \
+  controll C to exit
   
 5. Create WSGI Socket
   
