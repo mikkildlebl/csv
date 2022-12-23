@@ -22,12 +22,12 @@
   view app at *http://localhost:5000* \
   controll C to exit
   
-5. Create WSGI Socket \
+5. Create WSGI Socket  \
    `gunicorn --workers 3 --bind unix:/home/movieapp/app.sock -m 777 wsgi:app
   
-6. Configure NGINX \
-  - `ls /etc/nginx/` \
-  - nano /etc/nginx/sites-available/app \
+6. Configure NGINX  \
+  - `ls /etc/nginx/`  \
+  - nano /etc/nginx/sites-available/app  \
   - ```
     server {
       listen 80;
