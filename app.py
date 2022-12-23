@@ -2,11 +2,13 @@ from flask import *
 from werkzeug.utils import secure_filename
 import json
 import os
+import csv
+from main import main
 
 
 app = Flask(__name__)
 
-UPLOAD_FOLDER = './db'
+UPLOAD_FOLDER = './db/raw'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 
@@ -29,7 +31,12 @@ def index():
         }
         write_json(file_metadata, "./db/dbfiles.json")
 
-        
+        with open("./db/raw/" + filename,'r') as file:
+            reader = csv.reader(file)
+            header = next(reader)
+
+            return render_template("result.html", rows=reader, header=header)
+
     return render_template('index.html')
 
 

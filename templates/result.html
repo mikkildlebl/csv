@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <link rel="stylesheet" href="static/result.css">
+    </head>
+
+    <body>
+        <table id="table">
+            <!-- HEADER ROW -->
+            <tr>
+              {% for col in header %}
+              <th>{{ col }}</th>
+              {% endfor %}
+            </tr>
+           
+            <!-- DATA ROWS -->
+            {% for row in rows %}
+            <tr>
+              {% for col in row %}
+              <td>{{ col }}</td>
+              {% endfor %}
+            </tr>
+            {% endfor %}
+          </table>
+    </body>
+</html>
